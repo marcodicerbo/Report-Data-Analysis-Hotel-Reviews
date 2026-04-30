@@ -1,5 +1,5 @@
 # Report-Data-Analysis-Hotel-Reviews
-Analisi recensioni Booking.com – Hotel di lusso in Europa (2015–2017)  
+## Analisi recensioni Booking.com – Hotel di lusso in Europa (2015–2017)  
 ### 1. Descrizione del progetto  
 Questo repository contiene un progetto di data analysis end to end su un dataset reale di recensioni Booking.com per circa 515.000 recensioni relative a 1.493 hotel di lusso in Europa, nel periodo 2015–2017.   
 L’obiettivo del progetto è:  
