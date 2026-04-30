@@ -30,7 +30,7 @@ Descrizione dataframe:
 •	numero di recensioni precedenti del recensore;  
 •	numero totale di recensioni ricevute dall’hotel;  
 •	durata tra data recensione e data estrazione (days_since_review).  
-Inoltre, tra i files sono presenti anche nation.txt e cities.txt contenenti rispettivamente i nomi delle nazioni e delle città estratti dagli indirizzi del datset di partenza, al fine di poterli aggiungere al dataset come colonne per effettuare analisi di tipo geografico.
+Inoltre, tra i files sono presenti anche nations.txt e cities.txt contenenti rispettivamente i nomi delle nazioni e delle città estratti dagli indirizzi del datset di partenza, al fine di poterli aggiungere al dataset come colonne per effettuare analisi di tipo geografico.
 ________________________________________
 ### 3. Workflow di analisi 
 3.1 Esplorazione e pulizia dati – 01_EDA_CLEANING.ipynb  
