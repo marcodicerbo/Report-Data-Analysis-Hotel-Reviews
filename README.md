@@ -5,8 +5,8 @@ Questo repository contiene un progetto di data analysis end to end su un dataset
 L’obiettivo del progetto è:  
 •	importare, pulire e trasformare un dataset di grandi dimensioni con Python/Pandas;   
 •	progettare e popolare uno schema relazionale SQL con chiavi primarie e esterne;   
-•	sviluppare query SQL per rispondere a domande di business (trend temporali, nazionalità dei recensori, performance di hotel e città, lunghezza delle recensioni);    
-•	riprodurre e approfondire le analisi in Pandas; 
+•	sviluppare query SQL per rispondere a domande di business (trend temporali, nazionalità dei recensori, performance di hotel e città, lunghezza delle recensioni);      
+•	riprodurre e approfondire le analisi in Pandas;   
 •	produrre visualizzazioni (Matplotlib/Plotly) da integrare in un report finale in PDF rivolto a un contesto aziendale e a figure come i Revenue Manager. 
 Questo README spiega come è stato svolto il lavoro e fornisce le istruzioni per replicare l’analisi.  
 ________________________________________
