@@ -11,7 +11,7 @@ L’obiettivo del progetto è:
 Questo README spiega come è stato svolto il lavoro e fornisce le istruzioni per replicare l’analisi.  
 ________________________________________
 2. Dataset  
-Il dataset originale è scaricabile al link https://www.kaggle.com/ datasets/jiashenliu/515k-hotel-reviews-data-in-europe/data. I dati sono stati estratti da Booking.com che ne è proprietario. Per eccessive dimensioni di alcuni files, si condivide il link google drive della cartella in cui sono contenuti i dataset e i dati utilizzati per l’analisi: https://drive.google.com/drive/folders/1ML0zo-pJ9qK-ApG31Uoo8o_ZMk_8gU0v?usp=sharing 
+Il dataset originale è scaricabile al link https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe/data. I dati sono stati estratti da Booking.com che ne è proprietario. Per eccessive dimensioni di alcuni files, si condivide il link google drive della cartella in cui sono contenuti i dataset e i dati utilizzati per l’analisi: https://drive.google.com/drive/folders/1ML0zo-pJ9qK-ApG31Uoo8o_ZMk_8gU0v?usp=sharing 
   
 In particolare, sono stati inclusi: 
 1.	Il file originale: Hotel_Reviews.csv;  
