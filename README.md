@@ -1,6 +1,6 @@
 # Report-Data-Analysis-Hotel-Reviews
 Analisi recensioni Booking.com – Hotel di lusso in Europa (2015–2017)  
-1. Descrizione del progetto  
+### 1. Descrizione del progetto  
 Questo repository contiene un progetto di data analysis end to end su un dataset reale di recensioni Booking.com per circa 515.000 recensioni relative a 1.493 hotel di lusso in Europa, nel periodo 2015–2017.   
 L’obiettivo del progetto è:  
 •	importare, pulire e trasformare un dataset di grandi dimensioni con Python/Pandas;   
@@ -10,7 +10,7 @@ L’obiettivo del progetto è:
 •	produrre visualizzazioni (Matplotlib/Plotly) da integrare in un report finale in PDF rivolto a un contesto aziendale e a figure come i Revenue Manager. 
 Questo README spiega come è stato svolto il lavoro e fornisce le istruzioni per replicare l’analisi.  
 ________________________________________
-2. Dataset  
+### 2. Dataset  
 Il dataset originale è scaricabile al link https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe/data. I dati sono stati estratti da Booking.com che ne è proprietario. Per eccessive dimensioni di alcuni files, si condivide il link google drive della cartella in cui sono contenuti i dataset e i dati utilizzati per l’analisi: https://drive.google.com/drive/folders/1ML0zo-pJ9qK-ApG31Uoo8o_ZMk_8gU0v?usp=sharing 
   
 In particolare, sono stati inclusi: 
@@ -31,7 +31,7 @@ Descrizione dataframe:
 •	numero totale di recensioni ricevute dall’hotel;  
 •	durata tra data recensione e data estrazione (days_since_review).  
 ________________________________________
-3. Workflow di analisi 
+### 3. Workflow di analisi 
 3.1 Esplorazione e pulizia dati – 01_EDA_CLEANING.ipynb  
 In questo notebook si svolgono tutte le operazioni di preparazione e pulizia dei dati. 
 Passi principali:  
@@ -60,7 +60,8 @@ In questa fase si progetta e crea lo schema relazionale nel DB prescelto.
 •	reviewers;  
 •	hotel_stats;  
 2.	Definire chiavi primarie e foreign key:  
-3.	Eseguire lo script CREATE_TABLES.sql nel DB per creare la struttura.  
+3.	Eseguire lo script CREATE_TABLES.sql nel DB per creare la struttura.
+________________________________________ 
 3.3 Popolamento del database – sql/INSERT_DATA.sql  
 Una volta creato lo schema, si procede al caricamento dei dati puliti nel database: 
 1.	Importare hotel_reviews_clean.csv 
@@ -70,7 +71,8 @@ Una volta creato lo schema, si procede al caricamento dei dati puliti nel databa
 •	popolare le altre tabelle.  
 3.	Verificare i conteggi:  
 •	numero di righe in reviews vs righe del dataset pulito;  
-•	coerenza dei join (es. SELECT COUNT(*) FROM reviews JOIN hotels ...). 
+•	coerenza dei join (es. SELECT COUNT(*) FROM reviews JOIN hotels ...).
+________________________________________
 3.4 Analisi con SQL – sql/ANALYSIS_QUERIES.sql  
 In questo file sono raccolte le query SQL.  
 Esempi di gruppi di query:  
@@ -88,7 +90,8 @@ Esempi di gruppi di query:
 •	Score medio per nazione o città.  
 5.	Lunghezza delle recensioni  
 •	Distribuzione di ReviewLength per categorie di score.  
-•	Valutazione della relazione fra lunghezza recensione e Reviewer_Score.  
+•	Valutazione della relazione fra lunghezza recensione e Reviewer_Score.
+________________________________________
 3.5 Analisi con Pandas e generazione grafici – 02_ANALYSIS_PANDAS_PLOTS.ipynb  
 In questo notebook si riproducono e approfondiscono le analisi viste in SQL, questa volta con Pandas e librerie grafiche. 
 Passi principali:  
@@ -112,7 +115,7 @@ Passi principali:
 5.	Esportazione dei grafici  
 •	Salvare ogni grafico in formato .png (es. in una cartella plots/), per poterli poi inserire nel report finale in PDF.  
 ________________________________________
-4. Report finale  
+### 4. Report finale  
 Il report finale (report/FinalReport.pdf)  viene redatto a partire da:  
 •	gli insight e le tabelle ottenute tramite SQL e Pandas;  
 •	i grafici salvati dal notebook 02_ANALYSIS_PANDAS_PLOTS.ipynb.  
@@ -122,7 +125,7 @@ La struttura del report segue lo schema indicato:
 3.	Risultati principali: trend temporali, profilo nazionalità, performance città/hotel, correlazioni score–lunghezza.  
 4.	Conclusioni: insight per il business e per i Revenue Manager.  
 ________________________________________
-5. Come replicare l’analisi  
+### 5. Come replicare l’analisi  
 Per replicare l’analisi:  
 1.	Clonare il repository e installare le dipendenze.  
 2.	Scaricare il dataset Kaggle, copiarlo in DATA/ e aggiornare eventualmente i percorsi nei notebook.  
